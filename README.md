@@ -45,7 +45,7 @@ Chunhua Shen<sup>1,2,&dagger;</sup>
 
 ## Todo
 
-- [x] Release memory files and agent retrieval trajectories on [HuggingFace]()
+- [x] Release memory files and agent retrieval trajectories on [HuggingFace](https://huggingface.co/datasets/inclusionAI/MemDreamer)
 - [x] Release agentic retrieval code
 - [ ] Release memory construction code
 - [ ] Submit results to benchmark leaderboards (LVBench, LongVideoBench, Video-MME, EgoSchema)
