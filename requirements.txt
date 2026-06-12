@@ -1,0 +1,20 @@
+# ── Core ──
+# numpy
+# requests
+# pyyaml
+# pydantic
+
+# ── LLM backends ──
+openai
+
+# ── Embedding ──
+sentence-transformers
+# torch
+
+# ── Embedding server ──
+fastapi
+uvicorn[standard]
+
+# ── Local VLM (optional, only for Qwen3VL backend) ──
+# transformers
+# Pillow
