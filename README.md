@@ -1,4 +1,4 @@
-<h1 align="center">MemDreamer: Decoupling Perception and Reasoning<br>for Long Video Understanding via Hierarchical Graph Memory<br>and Agentic Retrieval Mechanism</h1>
+<h1 align="center">MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism</h1>
 
 <p align="center">
   <a href="https://arxiv.org/abs/2606.07512"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white"></a>
